@@ -14,6 +14,7 @@ marketing center — branding stuff, hashtags, content planning ideas
 hub website — one simple homepage to link it all together
 
 🛠️ tools used
+
 google sheets
 
 notion
