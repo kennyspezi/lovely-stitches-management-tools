@@ -41,3 +41,70 @@ p {
 .hub-button:hover {
     background-color: #a0b6a0;
 }
+
+/* Keep existing styles at the top... then add this below */
+
+.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.button-row button {
+  background-color: #f7c6c7;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.button-row button:hover {
+  background-color: #e6adb0;
+}
+
+.wide-iframe {
+  width: 100%;
+  max-width: 1600px;
+  height: 600px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 40px auto;
+}
+
+.iframe-stack {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  height: 800px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.iframe-stack > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
