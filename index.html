@@ -18,27 +18,42 @@
             loading="lazy">
         </iframe>
        
-        <iframe 
-            id="notionFrame"
-            src="https://lovely-stitches.notion.site/1e4876c5b3ec80828414f8e1648283e3?v=1e4876c5b3ec80ef951b000c869807dd" 
-            style="width:100%; height:600px; border:none; border-radius:10px;" 
-            allowfullscreen 
-            loading="lazy">
-        </iframe>
+<div style="max-width: 1200px; margin: auto; padding: 20px;">
+  <h2 style="text-align: center; font-size: 2rem; color: #5c5c5c; margin-bottom: 10px;">
+    🧠 Lovely Stitches Workspace (Forbidden Ritual Edition)
+  </h2>
+  <p style="text-align: center; margin-bottom: 25px; color: #888;">
+    Click a tab to summon a dashboard 👻
+  </p>
 
-        
-        <div style="margin-top: 15px;">
-            <button onclick="changeNotion('https://lovely-stitches.notion.site/1e4876c5b3ec803d819ee60ce1483d07?v=1e4876c5b3ec808281eb000c64cb0c6b')">📣 Marketing</button>
-            <button onclick="changeNotion('https://lovely-stitches.notion.site/1e4876c5b3ec806c83b0ddaf171eab04?v=1e4876c5b3ec80f18e93000cd2721572&pvs=74')">🧶 Patterns</button>
-            <button onclick="changeNotion('https://lovely-stitches.notion.site/1e4876c5b3ec80828414f8e1648283e3?v=1e4876c5b3ec80ef951b000c869807dd')">🎯 Goals</button>
-        </div>
-        
-        <script>
-        function changeNotion(url) {
-            document.getElementById("notionFrame").src = url;
-        }
-        </script>
-        
+  <!-- Notion Dashboards -->
+  <div id="marketingFrame" class="dashboardFrame">
+    <iframe src="https://www.notion.so/lovely-stitches/1e4876c5b3ec803d819ee60ce1483d07?v=1e4876c5b3ec808281eb000c64cb0c6b"
+      width="100%" height="800" style="border:none; border-radius:12px;"></iframe>
+  </div>
+  <div id="patternsFrame" class="dashboardFrame" style="display: none;">
+    <iframe src="https://www.notion.so/lovely-stitches/1e4876c5b3ec806c83b0ddaf171eab04?v=1e4876c5b3ec80f18e93000cd2721572"
+      width="100%" height="800" style="border:none; border-radius:12px;"></iframe>
+  </div>
+  <div id="goalsFrame" class="dashboardFrame" style="display: none;">
+    <iframe src="https://www.notion.so/lovely-stitches/1e4876c5b3ec80828414f8e1648283e3?v=1e4876c5b3ec80ef951b000c869807dd"
+      width="100%" height="800" style="border:none; border-radius:12px;"></iframe>
+  </div>
 
-    </div>
-</body>
+  <!-- Buttons -->
+  <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+    <button onclick="showDashboard('marketingFrame')">📣 Marketing</button>
+    <button onclick="showDashboard('patternsFrame')">🧶 Patterns</button>
+    <button onclick="showDashboard('goalsFrame')">🎯 Goals</button>
+  </div>
+</div>
+
+<script>
+  function showDashboard(frameId) {
+    const frames = document.getElementsByClassName('dashboardFrame');
+    for (let i = 0; i < frames.length; i++) {
+      frames[i].style.display = 'none';
+    }
+    document.getElementById(frameId).style.display = 'block';
+  }
+</script>
