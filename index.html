@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lovely Stitches Business Hub</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
@@ -29,15 +30,16 @@
 </div>
 
 <!-- Iframe Stack -->
-<div class="iframe-stack">
-  <div id="frame1" style="z-index: 3;">
-    <iframe src="...marketing link..." allowfullscreen></iframe>
-  </div>
-  <div id="frame2" style="z-index: 1;">
-    <iframe src="...patterns link..." allowfullscreen></iframe>
-  </div>
-  <div id="frame3" style="z-index: 1;">
-    <iframe src="...goals link..." allowfullscreen></iframe>
+<div style="position: relative; height: 600px; margin-top: 20px;">
+    <div id="frame1" class="notion-stack" style="position: absolute; width: 100%; height: 100%; z-index: 3;">
+      <iframe src="https://lovely-stitches.notion.site/ebd/1e4876c5b3ec803d819ee60ce1483d07?v=1e4876c5b3ec808281eb000c64cb0c6b" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="frame2" class="notion-stack" style="position: absolute; width: 100%; height: 100%; z-index: 1;">
+      <iframe src="https://lovely-stitches.notion.site/1e4876c5b3ec806c83b0ddaf171eab04?v=1e4876c5b3ec80f18e93000cd2721572" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="frame3" class="notion-stack" style="position: absolute; width: 100%; height: 100%; z-index: 1;">
+      <iframe src="https://lovely-stitches.notion.site/ebd/1e4876c5b3ec80828414f8e1648283e3?v=1e4876c5b3ec80ef951b000c869807dd" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
 </div>
 
