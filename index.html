@@ -7,41 +7,40 @@
 </head>
 <body>
 <div class="container">
-  <h1 style="text-align: center;">Lovely Stitches Business Hub 🌸</h1>
-  <p style="text-align: center;">Welcome! Choose what you want to work on:</p>
+<!-- Header -->
+<h1>Lovely Stitches Business Hub 🌸</h1>
+<p class="subtitle">Welcome! Choose what you want to work on:</p>
 
-  <!-- Google Sheets -->
-  <iframe 
-    src="https://docs.google.com/spreadsheets/d/1VOcCk543kK0R6m2eeOqxf-LPaY0DeU1pzwgae0D6__Y/edit?usp=sharing" 
-    style="margin-bottom: 40px; border-radius: 10px;"
-    allowfullscreen
-    loading="lazy">
-  </iframe>
+<!-- Google Sheet -->
+<iframe 
+  src="https://docs.google.com/spreadsheets/d/1VOcCk543kK0R6m2eeOqxf-LPaY0DeU1pzwgae0D6__Y/edit?usp=sharing" 
+  class="wide-iframe"
+  allowfullscreen 
+  loading="lazy"></iframe>
 
-  <!-- Header -->
-  <h2 style="text-align: center;">🧠 Lovely Stitches Notion Workspace</h2>
-  <p style="text-align: center;">Select a dashboard!</p>
+<h2>🧠 Lovely Stitches Notion Workspace</h2>
+<p class="subtitle">Select a dashboard!</p>
 
-  <!-- Buttons -->
-  <div class="button-row">
-    <button onclick="switchFrame(1)">📣 Marketing</button>
-    <button onclick="switchFrame(2)">🧶 Patterns</button>
-    <button onclick="switchFrame(3)">🎯 Goals</button>
+<!-- Buttons -->
+<div class="button-row">
+  <button onclick="switchFrame(1)">📣 Marketing</button>
+  <button onclick="switchFrame(2)">🧶 Patterns</button>
+  <button onclick="switchFrame(3)">🎯 Goals</button>
+</div>
+
+<!-- Iframe Stack -->
+<div class="iframe-stack">
+  <div id="frame1" style="z-index: 3;">
+    <iframe src="...marketing link..." allowfullscreen></iframe>
   </div>
-
-  <!-- Cursed iframe stack -->
-  <div class="iframe-stack">
-    <div id="frame1" style="z-index: 3;">
-      <iframe src="https://lovely-stitches.notion.site/ebd/1e4876c5b3ec803d819ee60ce1483d07?v=1e4876c5b3ec808281eb000c64cb0c6b" allowfullscreen></iframe>
-    </div>
-    <div id="frame2" style="z-index: 1;">
-      <iframe src="https://lovely-stitches.notion.site/ebd/1e4876c5b3ec806c83b0ddaf171eab04?v=1e4876c5b3ec80f18e93000cd2721572" allowfullscreen></iframe>
-    </div>
-    <div id="frame3" style="z-index: 1;">
-      <iframe src="https://lovely-stitches.notion.site/ebd/1e4876c5b3ec80828414f8e1648283e3?v=1e4876c5b3ec80ef951b000c869807dd" allowfullscreen></iframe>
-    </div>
+  <div id="frame2" style="z-index: 1;">
+    <iframe src="...patterns link..." allowfullscreen></iframe>
+  </div>
+  <div id="frame3" style="z-index: 1;">
+    <iframe src="...goals link..." allowfullscreen></iframe>
   </div>
 </div>
+
 
 <script>
 function switchFrame(n) {
